@@ -1,0 +1,16 @@
+#python program to demonstrate string funtions
+line=input("enter the line")
+print("before going to remove the space")
+print(f"the length of the string={len(line)}")
+line=line.strip()
+print("after removing spaces")
+print(f"the length of string={len(line)}")
+pos=line.find("bldea")
+if(pos>-1):
+    print(f"the bldea wod found at position {pos}")
+    line=line.replace("blde","kle")
+    print(line)
+    line=line.upper()
+    print(line)
+    line=line.title()
+    print(line)
